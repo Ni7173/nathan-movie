@@ -235,15 +235,16 @@
             <form action="https://formsubmit.co/nino.bravais20@gmail.com" method="POST" class="form">
                 <input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-
-                <label for="firstname">
-                    <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
-                </label>
-                <label for="lastname">
-                    <input type="text" name="lastname" id="lastname" placeholder="Prénom">
-                </label>
-                <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Votre e-mail" required>
+                <div class="contact-names">
+                    <label id="contact-fn" for="firstname">
+                        <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
+                    </label>
+                    <label id="contact-ln" for="lastname">
+                        <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+                    </label>
+                </div>
+                <label id="contact-mail" for="email">
+                    <input type="email" name="email" id="email" placeholder="Votre adresse e-mail" required>
                 </label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                 <input class="btn" type="submit" value="Envoyer">

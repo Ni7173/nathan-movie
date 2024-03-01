@@ -397,6 +397,19 @@ img {
     background: #D8AC49;
 }
 
+.contact-names {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-fn {
+    width: 48%;
+}
+
+#contact-ln {
+    width: 48%;
+}
+
 /* section footer */
 
 footer {
