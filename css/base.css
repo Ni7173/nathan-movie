@@ -512,6 +512,7 @@ footer {
     }
 
     .show-nav .navbar {
+        right: 0;
         opacity: 1;
         width: 100%;
         left: 0;
