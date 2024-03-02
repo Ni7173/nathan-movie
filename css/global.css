@@ -62,6 +62,10 @@ img {
     height: auto;
 }
 
+.img-radius {
+    border-radius: 15px;
+}
+
 .section-title {
     font-size: 30px;
 }
@@ -123,10 +127,7 @@ header {
 }
 
 .menu-list,
-.socials {
-    display: flex;
-}
-
+.socials,
 .icon-container {
     display: flex;
 }
@@ -179,10 +180,15 @@ header {
 @media screen and (max-width: 750px) {
     .mobile-p {
         text-align: center;
+        max-width: 90%;
     }
 
     .mobile-btn {
         margin-bottom: 1rem;
+    }
+
+    .section-title {
+        margin-top: 6rem;
     }
 }
 
@@ -192,9 +198,15 @@ header {
     display: flex;
 }
 
+@media screen and (min-width: 751px) {
+    #home {
+        margin-top: 4rem;
+    }
+}
+
 .home .section-title {
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .home-part {
@@ -219,8 +231,7 @@ header {
 }
 
 .home-right p {
-    justify-content: end;
-    display: flex;
+    text-align: center;
 }
 
 .home-right .more-btn {
@@ -268,6 +279,11 @@ header {
     justify-content: center;
 }
 
+.about p {
+    margin: 5rem 0 3rem 0;
+    line-height: 1.9;
+}
+
 @media screen and (max-width: 750px) {
     .about .grid {
         flex-direction: column-reverse;
@@ -277,8 +293,11 @@ header {
         display: grid;
         justify-items: center;
     }
-}
 
+    .about .more-btn {
+        max-width: 50%;
+    }
+}
 
 
 /* section tools*/
@@ -323,6 +342,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .tool-p-single {
@@ -343,11 +363,12 @@ header {
 
     .tools .section-title {
         font-size: 26px;
-        margin-top: 3.5rem;
+        margin-top: 5.5rem;
     }
 
     .tools .tools-pic-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .tool-pic {
@@ -376,11 +397,14 @@ header {
     width: 100%;
     display: flex;
     margin: 0 0 5rem;
+    align-items: flex-start;
 }
 
 .skills-right {
     margin: 0 0 0 2rem;
-
+    display: grid;
+    justify-items: end;
+    align-items: center;
 }
 
 .skills-subtitles {
@@ -398,6 +422,7 @@ header {
 
 .skills-content p {
     max-width: 95%;
+    margin: 3rem 0 4rem;
 }
 
 .skills-p-container {
@@ -415,6 +440,46 @@ header {
 
 .last-item {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    .skills_item {
+        flex-direction: column-reverse;
+    }
+
+    .skills-content {
+        display: grid;
+        justify-items: center;
+    }
+
+    .skill-pic {
+        border-radius: 15px;
+        max-width: 90%;
+    }
+
+    .skills-right,
+    .skills-left {
+        margin: 0;
+        display: grid;
+        justify-items: center;
+    }
+
+    .skills-content p {
+        max-width: 90%;
+        margin: 1rem 0 3rem;
+        text-align: center;
+    }
+
+    .skills-items-2 {
+        flex-direction: column;
+        display: grid;
+    }
+
+    .skills-p-container {
+        justify-content: center;
+    }
+
 }
 
 /* section projets*/
@@ -439,12 +504,39 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.project-link h3 {
+    color: #ffffff;
 }
 
 .projects-container {
     display: flex;
 }
 
+
+@media screen and (max-width: 750px) {
+
+    .projects .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .projects-p {
+        margin-bottom: 4rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left,
+    .right {
+        margin: 0 10px 2rem;
+    }
+}
 
 /* section contact */
 
@@ -501,6 +593,18 @@ header {
     width: 48%;
 }
 
+@media screen and (max-width: 750px) {
+
+    .contact-p {
+        max-width: 90%;
+    }
+
+    .contact form {
+        max-width: 90%;
+    }
+
+}
+
 /* section footer */
 
 footer {
@@ -524,12 +628,12 @@ footer {
 
 /* dynamisme et burger */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
     .navbar {
         display: flex;
         position: fixed;
         width: 0%;
-        height: calc(100vh - 55px);
+        height: calc(100vh - 106px);
         right: 110%;
         opacity: 0;
         background: white;
@@ -548,7 +652,6 @@ footer {
     }
 
     .menu-list {
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: -130px;
@@ -585,7 +688,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 990px) {
     .burger {
         display: none;
     }
