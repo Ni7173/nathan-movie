@@ -173,10 +173,28 @@ header {
     transform: translateY(8px);
 }
 
+
+/* class utilitaires responsive*/
+
+@media screen and (max-width: 750px) {
+    .mobile-p {
+        text-align: center;
+    }
+
+    .mobile-btn {
+        margin-bottom: 1rem;
+    }
+}
+
 /* section home*/
 
 .grid {
     display: flex;
+}
+
+.home .section-title {
+    display: flex;
+    justify-content: end;
 }
 
 .home-part {
@@ -197,6 +215,7 @@ header {
     display: flex;
     justify-content: flex-end;
     min-width: 50%;
+    text-align: right;
 }
 
 .home-right p {
@@ -220,10 +239,6 @@ header {
         justify-content: center;
     }
 
-    .home-content p {
-        justify-content: center;
-    }
-
     .home-right .home-part {
         display: grid;
         justify-items: center;
@@ -231,6 +246,10 @@ header {
 
     .home .more-btn {
         position: inherit;
+    }
+
+    .home .section-title {
+        margin-bottom: 1rem;
     }
 }
 
@@ -249,6 +268,19 @@ header {
     justify-content: center;
 }
 
+@media screen and (max-width: 750px) {
+    .about .grid {
+        flex-direction: column-reverse;
+    }
+
+    .about-left {
+        display: grid;
+        justify-items: center;
+    }
+}
+
+
+
 /* section tools*/
 
 .tools-pic-container {
@@ -256,17 +288,10 @@ header {
     justify-content: center;
 }
 
-.first-tool-pic {
-    margin: 0 50px 0 0;
-}
-
-.second-tool-pic {
-    margin: 0 0 0 50px;
-}
-
 .tool-title {
     justify-content: center;
     display: flex;
+    margin-bottom: 3rem;
 }
 
 .tools-content {
@@ -274,8 +299,6 @@ header {
 }
 
 .tools-subtitle {
-    justify-content: center;
-    display: flex;
     margin-bottom: 3rem;
 }
 
@@ -304,6 +327,41 @@ header {
 
 .tool-p-single {
     max-width: 80%;
+}
+
+.tool-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools-container {
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+
+    .tools .section-title {
+        font-size: 26px;
+        margin-top: 3.5rem;
+    }
+
+    .tools .tools-pic-container {
+        flex-direction: column;
+    }
+
+    .tool-pic {
+        margin: 0;
+    }
+
+    .tools-container {
+        display: block;
+    }
+
+    .tools-subtitle {
+        max-width: 80%;
+        text-align: center;
+    }
 }
 
 
@@ -465,68 +523,6 @@ footer {
 
 
 /* dynamisme et burger */
-
-/* burger */
-/*
-@media screen and (max-width:749px) {
-    nav {
-        display: flex;
-        position: fixed;
-        top: 55px;
-        left: 110%;
-        width: 0;
-        height: calc(100vh - 55px);
-        background: #F5F5F5;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        overflow: hidden;
-        opacity: 0;
-        transition: all .4s ease-out;
-    }
-
-    .show-nav nav {
-        opacity: 1;
-        width: 100%;
-        left: 0;
-        z-index: 2;
-    }
-
-    nav .menu-list li {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav .menu-list a {
-        display: block;
-        font-size: 2rem;
-        padding: 2rem;
-        transition: all .4s;
-    }
-
-    .show-nav .burger .bar {
-        width: 0;
-    }
-
-    .burger .bar::before,
-    .burger .bar::after {
-        transition: all 0.3s ease-out;
-    }
-
-    .show-nav .burger .bar::before {
-        transform: rotate(45deg);
-    }
-
-    .show-nav nav li a:hover {
-        transform: scale(1.1);
-        text-decoration: none;
-    }
-
-    .show-nav .burger .bar::after {
-        transform: rotate(-45deg);
-    }
-}
-*/
 
 @media screen and (max-width: 750px) {
     .navbar {
