@@ -93,6 +93,14 @@ img {
 
 /* header */
 
+header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #EEE;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -201,6 +209,31 @@ img {
     right: 0;
 }
 
+@media screen and (max-width: 750px) {
+    .home .grid {
+        flex-direction: column;
+    }
+
+    .home-right {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-content p {
+        justify-content: center;
+    }
+
+    .home-right .home-part {
+        display: grid;
+        justify-items: center;
+    }
+
+    .home .more-btn {
+        position: inherit;
+    }
+}
+
 /* section  about*/
 
 .about-part {
@@ -224,11 +257,11 @@ img {
 }
 
 .first-tool-pic {
-    margin: 0 10px 0 0;
+    margin: 0 50px 0 0;
 }
 
 .second-tool-pic {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 50px;
 }
 
 .tool-title {
