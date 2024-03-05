@@ -7,6 +7,7 @@
 .tool-part-container {
     display: grid;
     justify-items: center;
+    margin-bottom: 4rem;
 }
 
 .tool-section-name,
@@ -19,9 +20,17 @@
     margin-bottom: 6rem;
 }
 
+.tool-section-pic {
+    margin-bottom: 3rem;
+}
+
 
 @media screen and (max-width: 750px) {
     .tool-section-container {
         padding: 0 15px;
+    }
+
+    .tool-section-pic {
+        margin-bottom: 1.5rem;
     }
 }
