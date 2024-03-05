@@ -192,6 +192,13 @@ header {
     }
 }
 
+@media screen and (min-width: 751px) {
+    .p-single {
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
 /* section home*/
 
 .grid {
@@ -530,11 +537,12 @@ header {
     .projects-container {
         flex-direction: column;
         margin: 0;
+        padding: 0 15px;
     }
 
     .left,
     .right {
-        margin: 0 10px 2rem;
+        margin: 0 0 2rem;
     }
 }
 
@@ -605,6 +613,66 @@ header {
 
 }
 
+/* more-section sur pages annexes */
+
+.more-section {
+    display: grid;
+    justify-items: center;
+    margin: 0 0 7rem;
+}
+
+.more-section-title {
+    margin: 0 0 1.3rem 0;
+}
+
+.more-section-btn {
+    width: auto;
+    border: 2px solid;
+    padding: 1rem 1.5rem;
+    color: black;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.more-section-content {
+    margin-bottom: 2.5rem;
+}
+
+.separator {
+    content: "";
+    width: 30%;
+    max-width: 30%;
+    background: #000;
+    height: 2px;
+    position: static;
+    justify-self: center;
+}
+
+.separator-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 750px) {
+
+    .more-section-title {
+        margin: 0 0 .7rem 0;
+    }
+
+    .more-section {
+        margin: 0 0 4rem;
+    }
+
+    .separator {
+        width: 70%;
+        max-width: 70%;
+    }
+}
+
+
 /* section footer */
 
 footer {
@@ -624,6 +692,11 @@ footer {
     padding: 0 2rem;
 }
 
+@media screen and (max-width: 750px) {
+    footer {
+        padding: 3rem 0;
+    }
+}
 
 
 /* dynamisme et burger */

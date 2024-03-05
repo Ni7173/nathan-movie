@@ -1,0 +1,27 @@
+.sheet-content {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.tool-part-container {
+    display: grid;
+    justify-items: center;
+}
+
+.tool-section-name,
+.tool-section-subname {
+    text-align: center;
+}
+
+.tool-section-container {
+    padding: 0;
+    margin-bottom: 6rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .tool-section-container {
+        padding: 0 15px;
+    }
+}
