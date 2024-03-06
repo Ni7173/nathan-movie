@@ -16,25 +16,3 @@
     justify-items: center;
     margin: 0 0 5rem;
 }
-
-.about-title {
-    background: #fff;
-    position: relative;
-    padding: 0 10px;
-}
-
-.about-title-container {
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-}
-
-.about-title-container::before {
-    content: "";
-    height: 2px;
-    background: #000;
-    top: 50%;
-    position: absolute;
-    width: 140%;
-}

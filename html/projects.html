@@ -1,0 +1,354 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Movie - Projets</title>
+    <meta name="description" content="Apprenez-en plus sur mes projets précédents ici!">
+    <link rel="shortcut icon" href="../img-light/favicon-nathan.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <script src="../js/global.js" defer></script>
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container d-flex">
+            <button class="burger"><span class="bar"></span></button>
+            <div class="logo">
+                <a href="../index.html"><img src="../img-light/logo.svg" alt="nathan-movie" loading="lazy"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="menu-list list-unstyled">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../html/about.html">A propos</a></li>
+                    <li><a href="../html/tools.html">Appareils</a></li>
+                    <li><a href="../html/services.html">Services</a></li>
+                    <li><a href="../html/projects.html">Projets</a></li>
+                    <li><a href="../html/contact.html">Me Contacter</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="icon-container">
+                    <ul class="socials list-unstyled">
+                        <li><a href=""><img src="../img-light/icon-f.svg" alt="icon instagram" loading="lazy"></a></li>
+                        <li><a href="https://www.instagram.com/nathan.movie_/"><img src="../img-light/icon-ig.svg"
+                                    alt="icon instagram" loading="lazy"></a></li>
+                        <li><a href=""><img src="../img-light/icon-mail.svg" alt="icon instagram" loading="lazy"></a>
+                        </li>
+                        <li><a href=""><img src="../img-light/icon-tiktok-2.svg" alt="icon instagram"
+                                    loading="lazy"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sheet-title">
+        <div class="container">
+            <div class="sheet-content">
+                <h1 class="section-title">Découvrez mes projets précédents sur cette page!</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects-container">
+        <div class="container projects-section-container">
+            <div class="projects-type-selector">
+                <h4 class="selector-title">Sélectionnez le type de projet que vous souhaitez voir!</h4>
+                <ul class="list-unstyled projects-type-selector-grid">
+                    <li><a class="selector-btn active" href="#">Photographie</a></li>
+                    <li><a class="selector-btn" href="#">Vidéographie</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects-category-selector">
+                <h4 class="selector-title">Sélectionnez la catégorie du projet que vous souhaitez voir!</h4>
+                <ul class="list-unstyled projects-category-selector-grid">
+                    <div class="first-selector">
+                        <li><a class="selector-btn active" href="#" data-filter="all">Tout</a></li>
+                    </div>
+                    <div class="other-selectors">
+                        <li><a class="selector-btn" href="#" data-filter="cat1">Catégorie 1</a></li>
+                        <li><a class="selector-btn" href="#" data-filter="cat2">Catégorie 2</a>
+                        </li>
+                        <li><a class="selector-btn" href="#" data-filter="cat3">Catégorie 3</a>
+                        </li>
+                        <li><a class="selector-btn" href="#" data-filter="cat4">Catégorie 4</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="sheet-projects-grid">
+                <div class="project-card" data-category="">
+                    <img class="project-card-img" src="https://picsum.photos/600/400?random=12" alt="">
+                    <div class="card-inner">
+                        <h4 class="project-item-title">Projet 1</h4>
+                        <p class="project-category">Catégorie 1</p>
+                    </div>
+                    <div class="card__overlay">
+                        <a href="#" class="card__link" data-id="modal-1">+</a>
+                    </div>
+
+                    <div class="modal" id="modal-1">
+                        <button class="modal__close">&times;</button>
+                        <div class="modal__content">
+                            <div class="container">
+                                <div class="modal-grid">
+                                    <div class="modal-grid-img">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=12"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=15"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                    </div>
+                                    <div class="modal-grid-content">
+                                        <h4 class="modal__title h2">TITRE MODAL 1</h4>
+                                        <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                            </svg>
+                                            <i>Année 2022</i>
+                                        </p>
+                                        <p class="project-category">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                            </svg>
+                                            Developpement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sequi quo
+                                            necessitatibus delectus tenetur reprehenderit modi dicta tempora. Excepturi
+                                            rem ullam earum non. Id quaerat magnam quisquam possimus illum dignissimos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="">
+
+                    <img class="project-card-img" src="" alt="">
+                    <div class="card-inner">
+                        <h4 class="project-item-title"></h4>
+                        <span class="project-category"></span>
+                    </div>
+                    <div class="card__overlay">
+                        <a href="#" class="card__link" data-id="modal-1">+</a>
+                    </div>
+
+                    <div class="modal" id="modal-1">
+                        <button class="modal__close">&times;</button>
+                        <div class="modal__content">
+                            <div class="container">
+                                <div class="modal-grid">
+                                    <div class="modal-grid-img">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=12"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=15"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                    </div>
+                                    <div class="modal-grid-content">
+                                        <h4 class="modal__title h2">TITRE MODAL 1</h4>
+                                        <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                            </svg>
+                                            <i>Année 2022</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                            </svg>
+                                            Developpement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sequi quo
+                                            necessitatibus delectus tenetur reprehenderit modi dicta tempora. Excepturi
+                                            rem ullam earum non. Id quaerat magnam quisquam possimus illum dignissimos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="">
+
+                    <img class="project-card-img" src="" alt="">
+                    <div class="card-inner">
+                        <h4 class="project-item-title"></h4>
+                        <span class="project-category"></span>
+                    </div>
+                    <div class="card__overlay">
+                        <a href="#" class="card__link" data-id="modal-1">+</a>
+                    </div>
+
+                    <div class="modal" id="modal-1">
+                        <button class="modal__close">&times;</button>
+                        <div class="modal__content">
+                            <div class="container">
+                                <div class="modal-grid">
+                                    <div class="modal-grid-img">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=12"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=15"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                    </div>
+                                    <div class="modal-grid-content">
+                                        <h4 class="modal__title h2">TITRE MODAL 1</h4>
+                                        <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                            </svg>
+                                            <i>Année 2022</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                            </svg>
+                                            Developpement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sequi quo
+                                            necessitatibus delectus tenetur reprehenderit modi dicta tempora. Excepturi
+                                            rem ullam earum non. Id quaerat magnam quisquam possimus illum dignissimos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="">
+
+                    <img class="project-card-img" src="" alt="">
+                    <div class="card-inner">
+                        <h4 class="project-item-title"></h4>
+                        <span class="project-category"></span>
+                    </div>
+                    <div class="card__overlay">
+                        <a href="#" class="card__link" data-id="modal-1">+</a>
+                    </div>
+
+                    <div class="modal" id="modal-1">
+                        <button class="modal__close">&times;</button>
+                        <div class="modal__content">
+                            <div class="container">
+                                <div class="modal-grid">
+                                    <div class="modal-grid-img">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=12"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                        <img width="560" height="373" src="https://picsum.photos/600/400?random=15"
+                                            loading="lazy" alt="image projet" class="card__image">
+                                    </div>
+                                    <div class="modal-grid-content">
+                                        <h4 class="modal__title h2">TITRE MODAL 1</h4>
+                                        <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                            </svg>
+                                            <i>Année 2022</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                                viewBox="0 0 448 512">
+                                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="currentColor"
+                                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                            </svg>
+                                            Developpement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sequi quo
+                                            necessitatibus delectus tenetur reprehenderit modi dicta tempora. Excepturi
+                                            rem ullam earum non. Id quaerat magnam quisquam possimus illum dignissimos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="separator-container">
+        <div class="separator">
+
+        </div>
+    </div>
+
+    <section class="more-section">
+        <h3 class="more-section-title">
+            <i>Vous en voulez plus?</i>
+        </h3>
+        <p class="more-section-content">
+            <i>Découvrez mes services en cliquant ci-dessous!</i>
+        </p>
+        <a href="../html/services.html" class="more-section-btn">Mes services!</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="left-footer">
+                    <ul class="quick-links list-unstyled">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="middle-footer">
+                    <span>Copyright © 2024 - Nathan Movie</span>
+                </div>
+                <div class="right-footer">
+                    <ul class="socials list-unstyled">
+                        <li><a href=""><img src="../img-light/icon-f.svg" alt="facebook" loading="lazy"></a></li>
+                        <li><a href="https://www.instagram.com/nathan.movie_/"><img src="../img-light/icon-ig.svg"
+                                    alt="instagram" loading="lazy"></a>
+                        </li>
+                        <li><a href=""><img src="../img-light/icon-mail.svg" alt="mail" loading="lazy"></a></li>
+                        <li><a href=""><img src="../img-light/icon-tiktok-2.svg" alt="tiktok" loading="lazy"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
