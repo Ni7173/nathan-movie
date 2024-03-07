@@ -37,4 +37,13 @@
     .tool-section-container {
         padding: 0 10px;
     }
+
+
+    .tool-part-container {
+        padding: 0 10px;
+    }
+
+    .tool-section-subname {
+        max-width: 90%;
+    }
 }

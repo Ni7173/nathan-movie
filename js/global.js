@@ -23,7 +23,7 @@ const observerIntersectionAnimation = () => {
         if (index === 0) return
         section.style.opacity = "0";
         section.style.transform = "translateY(60px)";
-        section.style.transition = "all 1.3s";
+        section.style.transition = "all 1.6s";
     });
 
     let sectionObserver = new IntersectionObserver(function (entries, observer) {

@@ -189,6 +189,11 @@ header {
 
     .section-title {
         margin-top: 6rem;
+        font-size: 2.5rem;
+    }
+
+    .full-title {
+        font-size: 2.5rem;
     }
 }
 
@@ -557,6 +562,10 @@ header {
     }
 
     .projects-grid {
+        padding: 0 10px;
+    }
+
+    #projects {
         padding: 0 10px;
     }
 }
