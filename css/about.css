@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     margin: 0 0 2rem;
-    padding: 0 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.about-list-container p {
+    max-width: 90%;
 }
 
 .about-home-content {
@@ -15,4 +20,14 @@
     display: grid;
     justify-items: center;
     margin: 0 0 5rem;
+}
+
+.about-pic {
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .about-list-container {
+        padding: 0 10px;
+    }
 }

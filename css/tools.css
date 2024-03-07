@@ -33,4 +33,8 @@
     .tool-section-pic {
         margin-bottom: 1.5rem;
     }
+
+    .tool-section-container {
+        padding: 0 10px;
+    }
 }

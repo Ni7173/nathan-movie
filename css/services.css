@@ -17,11 +17,15 @@
         margin-bottom: 7rem;
     }
 
-    .service-container img {
+    .service-container {
         padding: 0 10px;
     }
 }
 
 .service-more-txt {
     margin-top: 5rem;
+}
+
+.service-container img {
+    border-radius: 15px;
 }
