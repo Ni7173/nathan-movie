@@ -14,6 +14,8 @@ function menuMobile() {
 }
 menuMobile();
 
+
+
 const observerIntersectionAnimation = () => {
     const sections = document.querySelectorAll('section');
 

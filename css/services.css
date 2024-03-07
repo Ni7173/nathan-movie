@@ -16,6 +16,10 @@
     .service-container {
         margin-bottom: 7rem;
     }
+
+    .service-container img {
+        padding: 0 10px;
+    }
 }
 
 .service-more-txt {

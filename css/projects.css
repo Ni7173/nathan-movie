@@ -25,33 +25,102 @@
     margin-bottom: 10px;
 }
 
-.other-selectors {
-    display: flex;
-    margin: 30px 0 0;
-    justify-content: center;
+.first-selector .selector-btn {
+    padding: 1rem 5rem;
 }
 
-.projects-category-selector-grid li {
-    margin: 0 8px;
+.other-selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects-category-selector-grid li,
+.projects-type-selector-grid li {
+    padding: 1rem 2rem;
+}
+
+.projects-grid-sheet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 4rem 0 2rem 0;
 }
 
 .selector-btn {
     background: #EEE;
-    padding: 1rem 1.5rem;
+    padding: 1rem 5.5rem;
+    transition: all .5s;
+    display: flex;
 }
 
-.active {
-    border-color: #D8AC49;
-    background-color: #D8AC49;
-    color: #fff;
+@media screen and (min-width:751px) {
+    .projects-grid-sheet {
+        min-width: 1200px;
+    }
 }
 
-.sheet-projects-grid {
+
+/* card settings */
+
+
+
+.grid__item {
+    margin-bottom: 0;
+    max-width: 25%;
+    display: flex;
+    opacity: 1;
+    transition: all 1s ease;
+    padding: 5px;
+}
+
+.project-card {
+    background: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    border: 1px solid #EEE;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-inner {
+    padding: 2rem;
+}
+
+.card__title {
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+}
+
+.card__overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    z-index: 0;
     width: 100%;
-    margin: 4rem 0 0 0;
+    height: 100%;
+    top: 110%;
+    opacity: 0;
+    transition: all .3s;
 }
 
-/* card setting */
+.card__overlay a {
+    color: #ffffff;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+}
+
+.project-card:hover .card__overlay {
+    top: 0;
+    opacity: 1;
+}
 
 .project-item-title {
     margin: 5px 0;
@@ -66,10 +135,128 @@
 
 /* modal settings */
 
-.card__overlay {
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 4;
+    transform: scale(0);
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+}
+
+.show {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__content {
+    background-color: #fefefe;
+    height: 100vh;
+    padding: 5rem 1rem;
+    overflow: auto;
+    text-align: left;
+}
+
+.modal img {
+    margin-bottom: 2rem;
+}
+
+.modal__title {
+    margin: 0 0 2rem;
+}
+
+.modal__close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    background: #fff;
+    border: 1px solid #595959;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 3.1rem;
+    color: #666;
+    cursor: pointer;
+}
+
+@media screen and (min-width:751px) {
+    .modal-grid-content {
+        padding: 0 2rem;
+    }
+
+    .modal-grid {
+        display: flex;
+    }
+
+    .modal-grid-img {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:750px) {
+    .other-selectors .selector-btn {
+        min-width: 50%;
+    }
+
+    .other-selectors {
+        flex-wrap: wrap;
+        justify-content: SPACE-EVENLY;
+    }
+
+    .grid__item {
+        max-width: 50%;
+    }
+
+    .selector-btn {
+        padding: 1rem 4.5rem;
+    }
+
+    .projects-category-selector-grid li,
+    .projects-type-selector-grid li {
+        padding: 1rem;
+    }
+
+    .projects-type-selector-grid .selector-btn {
+        padding: 1rem 3rem;
+    }
+}
+
+/* class grid setting */
+
+.show-grid {
+    display: flex;
+}
+
+.hide-grid {
     display: none;
 }
 
-.modal {
-    display: none;
+.active {
+    border-color: #D8AC49;
+    background-color: #D8AC49;
+    color: #fff;
+}
+
+.hide {
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: all .4s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.hide .card-inner {
+    padding: 0;
 }

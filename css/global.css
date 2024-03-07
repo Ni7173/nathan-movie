@@ -498,31 +498,30 @@ header {
 
 .projects-grid {
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    position: relative;
+    padding: 0 10px;
 }
 
-.project-link {
-    background-image: url("https://picsum.photos/600/400?random=12");
-    min-width: 50%;
-    min-height: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    justify-content: center;
+.project-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
 }
 
-.project-link h3 {
-    color: #ffffff;
+.project-img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.projects-container {
-    display: flex;
+.project__inner_txt {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 31%;
 }
-
 
 @media screen and (max-width: 750px) {
 
@@ -534,16 +533,28 @@ header {
         margin-bottom: 4rem;
     }
 
-    .projects-container {
-        flex-direction: column;
-        margin: 0;
-        padding: 0 15px;
-    }
-
     .left,
     .right {
         margin: 0 0 2rem;
         padding: 0 15px;
+    }
+
+    .project__inner_txt {
+        font-size: 1.5rem;
+        left: 10%;
+        top: 43%;
+    }
+
+    .projects-grid {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 751px) {
+
+    .project-img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -740,6 +751,10 @@ footer {
     footer {
         padding: 3rem 0;
     }
+
+    .middle-footer span {
+        font-size: 14px;
+    }
 }
 
 
@@ -751,7 +766,7 @@ footer {
         position: fixed;
         width: 0%;
         height: calc(100vh - 106px);
-        right: 110%;
+        left: 110%;
         opacity: 0;
         background: white;
         top: 105px;
