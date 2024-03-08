@@ -56,7 +56,6 @@ h6 {
     .container {
         justify-items: center;
         display: grid;
-        max-width: 330px;
     }
 }
 
@@ -524,6 +523,7 @@ header {
     max-width: 100%;
     position: relative;
     padding: 0 10px;
+    display: grid;
 }
 
 .project-btn {
@@ -543,8 +543,9 @@ header {
 .project__inner_txt {
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 31%;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -565,8 +566,6 @@ header {
 
     .project__inner_txt {
         font-size: 1.5rem;
-        left: 10%;
-        top: 43%;
     }
 
     .projects-grid {
