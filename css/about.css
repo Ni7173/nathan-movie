@@ -6,10 +6,6 @@
     text-align: center;
 }
 
-.about-list-container p {
-    max-width: 90%;
-}
-
 .about-home-content {
     display: grid;
     justify-content: center;

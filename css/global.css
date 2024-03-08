@@ -44,11 +44,18 @@ h6 {
     padding: 0;
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:751px) {
     .container {
         max-width: 1200;
         margin: 0 auto;
         padding: 2rem;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        justify-items: center;
+        display: grid;
     }
 }
 
@@ -146,7 +153,6 @@ header {
     height: 45px;
     cursor: pointer;
     position: relative;
-    margin-left: 1rem;
 }
 
 .burger .bar {
@@ -190,6 +196,7 @@ header {
     .section-title {
         margin-top: 6rem;
         font-size: 2.5rem;
+        max-width: 90%;
     }
 
     .full-title {
