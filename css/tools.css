@@ -26,9 +26,6 @@
 
 
 @media screen and (max-width: 750px) {
-    .tool-section-container {
-        padding: 0 15px;
-    }
 
     .tool-section-pic {
         margin-bottom: 1.5rem;
@@ -36,11 +33,15 @@
 
     .tool-section-container {
         padding: 0 10px;
+        margin-bottom: 2rem;
     }
-
 
     .tool-part-container {
         padding: 0 10px;
+    }
+
+    .tool-part-container:nth-child(1) .title-line-container::before {
+        width: 130%;
     }
 
     .tool-section-subname {
