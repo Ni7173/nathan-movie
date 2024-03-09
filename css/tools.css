@@ -44,6 +44,10 @@
         width: 130%;
     }
 
+    .tool-part-container:nth-child(1) .tool-section-name {
+        max-width: 90%;
+    }
+
     .tool-section-subname {
         max-width: 90%;
     }

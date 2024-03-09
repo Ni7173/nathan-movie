@@ -181,6 +181,32 @@ header {
 }
 
 
+/* effet navbar desktop*/
+
+
+.menu-list li a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: all .4s ease-in-out;
+}
+
+.menu-item-active::after {
+    display: block;
+    content: "";
+    width: 100% !important;
+    height: 2px;
+    background: #000;
+}
+
+.menu-list li:hover a::after {
+    width: 100%;
+}
+
+
+
 /* class utilitaires responsive*/
 
 @media screen and (max-width: 750px) {
@@ -226,6 +252,7 @@ header {
 .home .section-title {
     display: flex;
     justify-content: center;
+    font-size: 40px;
 }
 
 .section-title {
@@ -262,6 +289,10 @@ header {
     right: 0;
 }
 
+#about-home .grid {
+    justify-content: center;
+}
+
 @media screen and (max-width: 750px) {
     .home .grid {
         flex-direction: column;
@@ -283,6 +314,7 @@ header {
     }
 
     .home .section-title {
+        font-size: 30px;
         margin-bottom: 1rem;
     }
 }
@@ -341,7 +373,7 @@ header {
 }
 
 .tool-p {
-    text-align: justify;
+    text-align: center;
     display: flex;
     max-width: 85%;
 }
@@ -372,6 +404,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 50%;
 }
 
 .tools-container {
@@ -406,6 +439,7 @@ header {
 
     .tool-container {
         padding: 0 10px;
+        max-width: 100%;
     }
 
     .tool-p {
@@ -561,7 +595,6 @@ header {
     .left,
     .right {
         margin: 0 0 2rem;
-        padding: 0 15px;
     }
 
     .project__inner_txt {
@@ -752,15 +785,61 @@ header {
     background: #000;
     top: 50%;
     position: absolute;
-    width: 180%;
+    width: 340px;
 }
 
 @media screen and (max-width: 750px) {
     .title-line-container::before {
-        width: 160%;
+        width: 270px;
     }
 }
 
+
+/* class pour lignes sur côtés home page*/
+
+.home-title-line {
+    background: #fff;
+    position: relative;
+    padding: 0 10px;
+}
+
+.home-title-line-container {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 5rem;
+}
+
+.home-title-line-container::before {
+    content: "";
+    height: 2px;
+    background: #000;
+    top: 50%;
+    position: absolute;
+    width: 60%;
+}
+
+.contact .home-title-line-container::before {
+    max-width: 40%;
+}
+
+@media screen and (max-width: 750px) {
+    .home-title-line-container::before {
+        width: 270px;
+    }
+
+    .home-title-line {
+        font-size: 2.5rem;
+        max-width: 90%;
+    }
+
+    .home-title-line-container {
+        margin-top: 6rem;
+    }
+}
 
 /* section footer */
 
