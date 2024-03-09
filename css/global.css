@@ -813,20 +813,7 @@ header {
     margin-bottom: 5rem;
 }
 
-.home-title-line-container::before {
-    content: "";
-    height: 2px;
-    background: #000;
-    top: 50%;
-    position: absolute;
-    width: 60%;
-}
-
 @media screen and (max-width: 750px) {
-    .home-title-line-container::before {
-        width: 140%;
-    }
-
     .home-title-line {
         font-size: 2.5rem;
         max-width: 90%;
