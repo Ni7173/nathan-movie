@@ -83,7 +83,6 @@ img {
     font-size: 18px;
     color: #D8AC49;
     background: none;
-    flex-direction: column;
     text-align: center;
     width: auto;
 }
@@ -506,6 +505,12 @@ header {
     margin-bottom: 0;
 }
 
+.single-skill-p {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 750px) {
 
     .skills_item {
@@ -545,6 +550,13 @@ header {
     }
 
 }
+
+@media screen and (min-width: 751px) {
+    .skills-content p {
+        margin: 1rem 0 6rem;
+    }
+}
+
 
 /* section projets*/
 
@@ -821,6 +833,21 @@ header {
 
     .home-title-line-container {
         margin-top: 6rem;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .home-title-line-container::before {
+        content: "";
+        height: 2px;
+        background: #000;
+        top: 50%;
+        position: absolute;
+        width: 65%;
+    }
+
+    .contact .home-title-line-container::before {
+        width: 380px;
     }
 }
 
