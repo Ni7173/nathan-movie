@@ -335,6 +335,7 @@ header .socials li img {
 #about .home-title-line-container {
     color: white;
     background: var(--brand-color);
+    max-width: 100%;
 }
 
 #about .home-title-line-container::before {
@@ -640,6 +641,10 @@ section {
 
 /* section projets*/
 
+#projects {
+    margin-top: 4rem;
+}
+
 .projects-p {
     max-width: 90%;
     text-align: center;
@@ -786,6 +791,10 @@ section {
         padding: 0 10px;
     }
 
+}
+
+.sheet-title {
+    padding: 3rem;
 }
 
 .sheet-title .container {
