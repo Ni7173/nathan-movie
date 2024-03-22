@@ -353,6 +353,8 @@ header .socials li img {
     padding: 2rem 2rem 0;
     border-radius: 15px;
     width: fit-content;
+    align-items: center;
+    max-width: 100%;
 }
 
 #about .grid .about-part {
