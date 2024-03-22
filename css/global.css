@@ -335,7 +335,6 @@ header .socials li img {
 #about .home-title-line-container {
     color: white;
     background: var(--brand-color);
-    max-width: 100%;
 }
 
 #about .home-title-line-container::before {
@@ -401,6 +400,10 @@ header .socials li img {
 
     #about .container .grid {
         padding: 2rem;
+    }
+
+    #about h1 {
+        max-width: 90%;
     }
 }
 
