@@ -51,7 +51,7 @@ const observerSkillsAnimation = () => {
         skill.style.transform = "translateY(60px)";
         skill.style.transition = "all 1.6s";
     });
-
+    
     let skillsObserver = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -65,6 +65,8 @@ const observerSkillsAnimation = () => {
     skills.forEach(skill => {
         skillsObserver.observe(skill);
     });
+    console.log(skills);
+
 }
 
 observerSkillsAnimation();

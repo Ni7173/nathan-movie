@@ -5,7 +5,8 @@ main color: #D8AC49
 */
 
 :root {
-    --color-body: #333
+    --color-body: #333;
+    --brand-color: #D8AC49;
 }
 
 * {
@@ -78,13 +79,18 @@ img {
 }
 
 .more-btn {
-    border: solid 2px #D8AC49;
+    border: solid 2px var(--brand-color);
     padding: 5px 11px;
     font-size: 18px;
-    color: #D8AC49;
+    color: var(--brand-color);
     background: none;
     text-align: center;
     width: auto;
+    transition: all .3s ease-out;
+}
+
+.more-btn:hover {
+    scale: 1.04;
 }
 
 .left {
@@ -143,6 +149,10 @@ header {
     max-width: 25px;
     display: flex;
     align-items: center;
+}
+
+header .socials li img {
+    color: var(--brand-color);
 }
 
 .burger {
@@ -320,12 +330,44 @@ header {
 
 /* section  about*/
 
-.about-part {
+#about,
+#about h1,
+#about .home-title-line-container {
+    color: white;
+    background: var(--brand-color);
+}
+
+#about .home-title-line-container::before {
+    background: white;
+}
+
+#about .container {
+    padding: 2rem;
+}
+
+#about .container .grid {
+    background: white;
+    color: #000;
+    margin-bottom: 3rem;
+    padding: 2rem 2rem 0;
+    border-radius: 15px;
+}
+
+#about .grid .about-part {
+    min-width: 50%;
+}
+
+#about .grid .about-part {
     min-width: 50%;
 }
 
 .about-part img {
     min-width: 300px;
+}
+
+.about .more-btn {
+    color: var(--brand-color);
+    border-color: var(--brand-color);
 }
 
 .about-right {
@@ -334,7 +376,7 @@ header {
 }
 
 .about p {
-    margin: 5rem 0 3rem 0;
+    margin: 5rem 0 5rem 0;
     line-height: 1.9;
 }
 
@@ -347,10 +389,24 @@ header {
         display: grid;
         justify-items: center;
     }
+
+    #about {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #about .container .grid {
+        padding: 2rem;
+    }
 }
 
 
 /* section tools*/
+
+section {
+    padding-bottom: 4rem !important;
+    padding-top: 4rem !important;
+}
 
 .tools-pic-container {
     display: flex;
@@ -451,6 +507,22 @@ header {
 
 /* section services */
 
+#skills,
+#skills .home-title-line-container,
+#skills .home-title-line-container h1 {
+    background: var(--brand-color);
+}
+
+#skills .home-title-line-container::before {
+    background: #fff;
+}
+
+#skills h1,
+#skills .single-skill-p {
+    color: #fff;
+}
+
+
 .skills-grid {
     display: flex;
     flex-direction: column;
@@ -461,6 +533,9 @@ header {
     display: flex;
     margin: 0 0 5rem;
     align-items: flex-start;
+    background: white;
+    border-radius: 15px;
+    padding: 1rem 2rem;
 }
 
 .skills-right {
@@ -513,8 +588,13 @@ header {
 
 @media screen and (max-width: 750px) {
 
+    #skills .container {
+        padding: 0 3rem;
+    }
+
     .skills_item {
         flex-direction: column-reverse;
+        padding: 0;
     }
 
     .skills-content {
@@ -523,8 +603,8 @@ header {
     }
 
     .skill-pic {
-        border-radius: 15px;
-        max-width: 90%;
+        border-radius: 15px 15px 0 0;
+        max-width: 100%;
     }
 
     .skills-right,
@@ -676,7 +756,7 @@ header {
 
 .form .btn:hover {
     cursor: pointer;
-    background: #D8AC49;
+    background: var(--brand-color);
 }
 
 .contact-names {
@@ -708,10 +788,31 @@ header {
 
 }
 
+.sheet-title .container {
+    display: grid;
+    justify-items: center;
+}
+
 .sheet-content {
     text-align: center;
     justify-items: center;
     display: grid;
+    background: var(--brand-color);
+    border-radius: 15px;
+    padding: 2rem;
+    color: #fff;
+    width: fit-content;
+}
+
+.sheet-content h1 {
+    margin-top: 2rem;
+    color: #fff;
+}
+
+@media screen and (min-width: 751px) {
+    .sheet-content {
+        padding: 2rem 4rem;
+    }
 }
 
 /* more-section sur pages annexes */
@@ -729,12 +830,18 @@ header {
 
 .more-section-btn {
     width: auto;
-    border: 2px solid;
-    padding: 1rem 1.5rem;
-    color: black;
+    border: 2px solid var(--brand-color);
+    padding: 1rem 2rem;
+    color: var(--brand-color);
     border-radius: 6px;
     background: #fff;
+    transition: all .3s ease-out;
 }
+
+.more-section-btn:hover {
+    scale: 1.05;
+}
+
 
 .more-section-content {
     margin-bottom: 2.5rem;
@@ -832,7 +939,7 @@ header {
     }
 
     .home-title-line-container {
-        margin-top: 6rem;
+        margin: 2rem 0;
     }
 }
 
@@ -854,6 +961,7 @@ header {
 /* section footer */
 
 footer {
+    background: var(--brand-color);
     border-top: 1px solid #e8e0e0;
     padding: 2rem;
 }
@@ -887,6 +995,10 @@ footer {
     .middle-footer {
         margin-top: 1rem;
     }
+}
+
+footer img {
+    color: var(--color-body);
 }
 
 
