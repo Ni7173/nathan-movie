@@ -973,6 +973,7 @@ footer {
     background: var(--brand-color);
     border-top: 1px solid #e8e0e0;
     padding: 2rem;
+    position: relative;
 }
 
 .left-footer {
@@ -1010,6 +1011,14 @@ footer img {
     color: var(--color-body);
 }
 
+.designer {
+    position: absolute;
+    right: 0;
+    writing-mode: vertical-rl;
+    font-size: 10px;
+    transform: rotate(180deg);
+    bottom: 13%;
+}
 
 /* dynamisme et burger */
 
