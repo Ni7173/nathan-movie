@@ -394,7 +394,6 @@ header .socials li img {
     }
 
     #about {
-        padding: 0 2rem;
         margin-bottom: 2rem;
     }
 
@@ -404,6 +403,10 @@ header .socials li img {
 
     #about h1 {
         max-width: 90%;
+    }
+
+    .about-part img {
+        min-width: 250px;
     }
 }
 
