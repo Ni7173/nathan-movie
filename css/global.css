@@ -360,9 +360,6 @@ header .socials li img {
     min-width: 50%;
 }
 
-#about .grid .about-part {
-    min-width: 50%;
-}
 
 .about-part img {
     min-width: 300px;
@@ -386,6 +383,10 @@ header .socials li img {
 @media screen and (max-width: 750px) {
     .about .grid {
         flex-direction: column-reverse;
+    }
+
+    #about .grid .about-part {
+        min-width: 40%;
     }
 
     .about-left {
@@ -1026,7 +1027,7 @@ footer img {
     writing-mode: vertical-rl;
     font-size: 10px;
     transform: rotate(180deg);
-    bottom: 13%;
+    bottom: 15%;
 }
 
 /* dynamisme et burger */
