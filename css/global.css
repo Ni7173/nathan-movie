@@ -252,16 +252,14 @@ header .socials li img {
     display: flex;
 }
 
-@media screen and (min-width: 751px) {
-    #home {
-        margin-top: 4rem;
-    }
-}
-
 .home .section-title {
     display: flex;
     justify-content: center;
     font-size: 40px;
+}
+
+.home {
+    padding-top: 0;
 }
 
 .section-title {
@@ -274,11 +272,6 @@ header .socials li img {
 
 .home-part img {
     min-width: 300px;
-}
-
-.home-left {
-    display: flex;
-    justify-content: center;
 }
 
 .home-right {
@@ -416,7 +409,7 @@ header .socials li img {
 
 section {
     padding-bottom: 4rem !important;
-    padding-top: 4rem !important;
+    padding-top: 4rem;
 }
 
 .tools-pic-container {
